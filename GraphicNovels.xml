@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="GraphicNovels.xsd" generated="2019-03-16T19:36:46">
+<GraphicNovels>
+<Graphic_x0020_Novel>The Sandman</Graphic_x0020_Novel>
+<Publisher>DC</Publisher>
+<First_x0020_Issue_x0020_Date>1989-01-01T00:00:00</First_x0020_Issue_x0020_Date>
+<Last_x0020_Issue_x0020_Date>1996-03-01T00:00:00</Last_x0020_Issue_x0020_Date>
+<Author>Neil Gaiman</Author>
+<CoAuthor_x0020_1>Sam Kieth</CoAuthor_x0020_1>
+<CoAuthor_x0020_2>Mike Dringenberg</CoAuthor_x0020_2>
+</GraphicNovels>
+<GraphicNovels>
+<Graphic_x0020_Novel>Watchmen</Graphic_x0020_Novel>
+<Publisher>DC</Publisher>
+<First_x0020_Issue_x0020_Date>1984-02-01T00:00:00</First_x0020_Issue_x0020_Date>
+<Last_x0020_Issue_x0020_Date>1987-09-01T00:00:00</Last_x0020_Issue_x0020_Date>
+<Author>Allen Moore</Author>
+<CoAuthor_x0020_1>Dave Gibbons</CoAuthor_x0020_1>
+<CoAuthor_x0020_2>John Higgins</CoAuthor_x0020_2>
+</GraphicNovels>
+<GraphicNovels>
+<Graphic_x0020_Novel>The Swamp Thing</Graphic_x0020_Novel>
+<Publisher>DC</Publisher>
+<First_x0020_Issue_x0020_Date>1986-01-01T00:00:00</First_x0020_Issue_x0020_Date>
+<Last_x0020_Issue_x0020_Date>1987-12-01T00:00:00</Last_x0020_Issue_x0020_Date>
+<Author>Allen Moore</Author>
+<CoAuthor_x0020_1>Stephen Bissette</CoAuthor_x0020_1>
+<CoAuthor_x0020_2>Jon Totleben</CoAuthor_x0020_2>
+</GraphicNovels>
+</dataroot>
