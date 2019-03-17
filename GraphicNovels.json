@@ -1,6 +1,6 @@
 {
 "Graphic Novels":[
-   "Graphic Novel":{
+   "Graphic Novel":[
    "Name": "The Sandman",
    "Publisher": "DC",
    "First Issue Date": "1/1/89",
@@ -8,8 +8,8 @@
    "Author": "Neil Gaiman",
    "CoAuthor 1": "Sam Kieth",
    "CoAuthor 2": "Mike Dringenberg"
-   },
-   "Graphic Novel":{
+   ],
+   "Graphic Novel":[
    "Name": "Watchmen",
    "Publisher": "DC",
    "First Issue Date": "1/1/86",
@@ -17,8 +17,8 @@
    "Author": "Allen Moore",
    "CoAuthor 1": "Dave Gibbons",
    "CoAuthor 2": "John Higgins"
-   }
-   "Graphic Novel":{
+   ]
+   "Graphic Novel":[
    "Name": "The Swamp Thing",
    "Publisher": "DC",
    "First Issue Date": "2/1/84",
@@ -26,6 +26,6 @@
    "Author": "Allen Moore",
    "CoAuthor 1": "Stephen Bissette",
    "CoAuthor2": "Jon Totleben"
-   }
+   ]
    ]
    }
