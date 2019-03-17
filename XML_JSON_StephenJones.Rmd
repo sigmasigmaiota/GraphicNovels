@@ -1,0 +1,183 @@
+---
+title: "Graphic Novels"
+author: <span style="font-size:18px">Stephen Jones</span>
+date: <span style="font-size:18px">March 16, 2019</span>
+output:
+  html_document:
+    code_folding: hide
+  pdf_document: default
+---
+<style type="text/css">
+h1.title {
+  color: DarkBlue;
+  font-weight: bold;
+}
+h1 { /* Header 1 */
+  color: DarkBlue;
+  font-weight: bold;
+}
+h2 { /* Header 2 */
+  color: DarkBlue;
+  font-weight: bold;
+}
+h3 { /* Header 3 */
+  color: DarkBlue;
+  font-weight: bold;
+}
+h4 { /* Header 3 */
+  color: DarkBlue;
+  font-weight: bold;
+}
+pre { /* Code block - determines code spacing between lines */
+  font-size: 12px;
+  max-height: 300px;
+  float: left;
+  width: 100%;
+  overflow-y: auto;
+}
+pre.r {
+  max-height: none;
+}
+div.grey {
+  background-color:#F3F2D8; 
+  border-radius: 5px; 
+  padding: 40px;
+}
+.btn {
+    border-width: 0 0px 0px 0px;
+    font-weight: normal;
+    text-transform: ;
+}
+.btn-default {
+    color: #2ecc71;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+</style>
+***  
+
+
+##Observations - <i>Working with XML and JSON in R</i> {.tabset .tabset-fade}  
+
+The tables and dataframes differ slightly; while creating the XML file I eliminated spaces in the column names and replaced with an underscore. The JSON file contained a heading "Graphic Novel" and different column/variable title "Name". Dates were also formatted differently. I tested an Access xml export function after creating the xml table manually as suggested (used here, above); the default settings produced complications but was informative.  
+
+
+###XML {.tabset .tabset-fade .tabset-pills}  
+
+Link: https://raw.githubusercontent.com/sigmasigmaiota/GraphicNovels/master/GraphicNovels.xml
+
+#### Import
+
+The packages `XML` and `RCurl` download the file from GitHub; then I convert to a list and bind into a dataframe. `kableExtra` displays the result.  
+
+```{r warning=FALSE,message=FALSE,fig.align='center'}
+library(XML)
+library(RCurl)
+library(kableExtra)
+
+#set url, filename.
+xmlurl<-"https://raw.githubusercontent.com/sigmasigmaiota/GraphicNovels/master/GraphicNovels.xml"
+
+#RCurl.
+xmlfile<-getURL(xmlurl)
+
+#Parse the XML file.
+xml.table <- xmlParse(xmlfile,useInternal=TRUE)
+xml.table2<-xmlToList(xml.table)
+
+#Convert to dataframe.
+GN.xml<-do.call(rbind.data.frame, xml.table2)
+rownames(GN.xml)<-NULL
+
+kable(GN.xml)%>%
+kable_styling()
+
+```  
+
+#### File  
+
+The file, as it looks after download from GitHub.  
+
+```{r message=FALSE, message=FALSE}
+
+print(xml.table)
+
+```
+
+###JSON {.tabset .tabset-fade .tabset-pills}  
+
+Link: https://raw.githubusercontent.com/sigmasigmaiota/GraphicNovels/master/GraphicNovels.json
+
+####Import  
+
+The package `jsonlite` is used to download and parse the JSON file.  
+
+```{r warning=FALSE,message=FALSE,fig.align='center'}
+library(jsonlite)
+
+#set url, filename.
+jsonurl<-"https://raw.githubusercontent.com/sigmasigmaiota/GraphicNovels/master/GraphicNovels.json"
+
+#RCurl.
+jsonfile<-getURL(jsonurl)
+
+# Give the input file name to the function.
+jsontable<- fromJSON(jsonfile)
+
+#Unname the table to avoid column name changes.
+GN.json<-as.data.frame(unname(jsontable))
+
+kable(GN.json)%>%
+kable_styling()
+
+```  
+
+#### File  
+
+The file, as it looks after download from GitHub, before parsing.  
+
+```{r message=FALSE, message=FALSE}
+
+print(jsonfile)
+
+```
+
+###HTML {.tabset .tabset-fade .tabset-pills}  
+
+Link: https://raw.githubusercontent.com/sigmasigmaiota/GraphicNovels/master/GraphicNovels.html
+
+####Import  
+
+The package `XML` is used to download and parse; `rlist` helps organize.  
+
+```{r warning=FALSE,message=FALSE,fig.align='center'}
+
+library(rlist)
+
+htmlurl<-"https://raw.githubusercontent.com/sigmasigmaiota/GraphicNovels/master/GraphicNovels.html"
+
+htmlfile<-getURL(htmlurl)
+
+#Alternate command.
+htmltable2<- readHTMLTable(htmlfile)
+htmltable2<-list.clean(htmltable2,fun=is.null,recursive=FALSE)
+
+#Unname the table to avoid column name changes.
+GN.html<-as.data.frame(unname(htmltable2))
+
+kable(GN.html)%>%
+kable_styling()
+
+```  
+
+####File  
+
+The file, as it looks after download from GitHub, before parsing.  
+
+```{r message=FALSE, message=FALSE}
+
+print(htmlfile)
+
+```  
+
+
