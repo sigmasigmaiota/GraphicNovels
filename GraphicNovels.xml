@@ -1,27 +1,29 @@
 <GraphicNovels>
-<Graphic_Novel>The Sandman</Graphic_Novel>
-<Publisher>DC</Publisher>
-<First_Issue_Date>1989-01-01T00:00:00</First_Issue_Date>
-<Last_Issue_Date>1996-03-01T00:00:00</Last_Issue_Date>
-<Author>Neil Gaiman</Author>
-<CoAuthor_1>Sam Kieth</CoAuthor_1>
-<CoAuthor_2>Mike Dringenberg</CoAuthor_2>
-</GraphicNovels>
-<GraphicNovels>
-<Graphic_Novel>Watchmen</Graphic_Novel>
-<Publisher>DC</Publisher>
-<First_Issue_Date>1984-02-01T00:00:00</First_Issue_Date>
-<Last_Issue_Date>1987-09-01T00:00:00</Last_Issue_Date>
-<Author>Allen Moore</Author>
-<CoAuthor_1>Dave Gibbons</CoAuthor_1>
-<CoAuthor_2>John Higgins</CoAuthor_2>
-</GraphicNovels>
-<GraphicNovels>
-<Graphic_Novel>The Swamp Thing</Graphic_Novel>
-<Publisher>DC</Publisher>
-<First_Issue_Date>1986-01-01T00:00:00</First_Issue_Date>
-<Last_Issue_Date>1987-12-01T00:00:00</Last_Issue_Date>
-<Author>Allen Moore</Author>
-<CoAuthor_1>Stephen Bissette</CoAuthor_1>
-<CoAuthor_2>Jon Totleben</CoAuthor_2>
+	<Graphic_Novel>
+		<Name>The Sandman</Name>
+		<Publisher>DC</Publisher>
+		<First_Issue_Date>1989-01-01T00:00:00</First_Issue_Date>
+		<Last_Issue_Date>1996-03-01T00:00:00</Last_Issue_Date>
+		<Author>Neil Gaiman</Author>
+		<CoAuthor_1>Sam Kieth</CoAuthor_1>
+		<CoAuthor_2>Mike Dringenberg</CoAuthor_2>
+	</Graphic_Novel>
+	<Graphic_Novel>
+		<Name>Watchmen</Name>
+		<Publisher>DC</Publisher>
+		<First_Issue_Date>1984-02-01T00:00:00</First_Issue_Date>
+		<Last_Issue_Date>1987-09-01T00:00:00</Last_Issue_Date>
+		<Author>Allen Moore</Author>
+		<CoAuthor_1>Dave Gibbons</CoAuthor_1>
+		<CoAuthor_2>John Higgins</CoAuthor_2>
+	</Graphic_Novel>
+	<Graphic_Novel>
+		<Name>The Swamp Thing</Name>
+		<Publisher>DC</Publisher>
+		<First_Issue_Date>1986-01-01T00:00:00</First_Issue_Date>
+		<Last_Issue_Date>1987-12-01T00:00:00</Last_Issue_Date>
+		<Author>Allen Moore</Author>
+		<CoAuthor_1>Stephen Bissette</CoAuthor_1>
+		<CoAuthor_2>Jon Totleben</CoAuthor_2>
+	</Graphic_Novel>
 </GraphicNovels>
