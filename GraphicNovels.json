@@ -1,34 +1,31 @@
 {
 "Graphic Novels":[
    "Graphic Novel":{
-		"Name": "The Sandman",
-		"Publisher": "DC",
-		"First Issue Date": "1/1/89",
-		"Last Issue Date": "3/1/96",
-		"Author": "Neil Gaiman",
-		"CoAuthor 1": "Sam Kieth",
-		"CoAuthor 2": "Mike Dringenberg"
-	   },
-
+   "Name": "The Sandman",
+   "Publisher": "DC",
+   "First Issue Date": "1/1/89",
+   "Last Issue Date": "3/1/96",
+   "Author": "Neil Gaiman",
+   "CoAuthor 1": "Sam Kieth",
+   "CoAuthor 2": "Mike Dringenberg"
+   },
    "Graphic Novel":{
-		"Name": "Watchmen",
-	    "Publisher": "DC",
-	    "First Issue Date": "1/1/86",
-	    "Last Issue Date": "12/1/87",
-	    "Author": "Allen Moore",
-	    "CoAuthor 1": "Dave Gibbons",
-	    "CoAuthor 2": "John Higgins"
-		}
-
+   "Name": "Watchmen",
+   "Publisher": "DC",
+   "First Issue Date": "1/1/86",
+   "Last Issue Date": "12/1/87",
+   "Author": "Allen Moore",
+   "CoAuthor 1": "Dave Gibbons",
+   "CoAuthor 2": "John Higgins"
+   }
    "Graphic Novel":{
-		"Name": "The Swamp Thing",
-		"Publisher": "DC",
-		"First Issue Date": "2/1/84",
-		"Last Issue Date": "9/1/87",
-		"Author": "Allen Moore",
-		"CoAuthor 1": "Stephen Bissette",
-		"CoAuthor2": "Jon Totleben"
-		}
-		
- ]
-}
+   "Name": "The Swamp Thing",
+   "Publisher": "DC",
+   "First Issue Date": "2/1/84",
+   "Last Issue Date": "9/1/87",
+   "Author": "Allen Moore",
+   "CoAuthor 1": "Stephen Bissette",
+   "CoAuthor2": "Jon Totleben"
+   }
+   ]
+   }
